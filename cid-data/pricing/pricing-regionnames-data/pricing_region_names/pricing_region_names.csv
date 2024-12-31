@@ -1,4 +1,0 @@
-Region,Long Name,Endpoint,Protocol
-us-east-1,US East (N. Virginia),rds.us-east-1.amazonaws.com,HTTPS
-ap-southeast-1,Asia Pacific (Singapore),rds.ap-southeast-1.amazonaws.com,HTTPS
-us-west-2,US West (Oregon),rds.us-west-2.amazonaws.com,HTTPS

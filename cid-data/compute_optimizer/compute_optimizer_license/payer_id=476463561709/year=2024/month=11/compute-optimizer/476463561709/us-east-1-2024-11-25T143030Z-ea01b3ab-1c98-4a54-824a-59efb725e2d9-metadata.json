@@ -1,0 +1,187 @@
+{
+  "@context" : [ "http://www.w3.org/ns/csvw" ],
+  "url" : "us-east-1-2024-11-25T143030Z-ea01b3ab-1c98-4a54-824a-59efb725e2d9.csv",
+  "dc:title" : "License Recommendations",
+  "dialect" : {
+    "encoding" : "utf-8",
+    "lineTerminators" : [ "\n" ],
+    "doubleQuote" : true,
+    "skipRows" : 0,
+    "header" : true,
+    "headerRowCount" : 1,
+    "delimiter" : ",",
+    "skipColumns" : 0,
+    "skipBlankRows" : true,
+    "trim" : true
+  },
+  "dc:modified" : {
+    "@value" : "2023-08-23",
+    "@type" : "xsd:date"
+  },
+  "tableSchema" : {
+    "columns" : [ {
+      "name" : "accountId",
+      "titles" : "Accound id",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "resourceArn",
+      "titles" : "License Resource Arn",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "lookBackPeriodInDays",
+      "titles" : "Look Back period in days",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "lastRefreshTimestamp_UTC",
+      "titles" : "Last refresh timestamp",
+      "datatype" : "datetime",
+      "null" : "",
+      "required" : false,
+      "format" : "yyyy-MM-dd HH:mm:ss"
+    }, {
+      "name" : "currentLicenseConfiguration_numberOfCores",
+      "titles" : "Current License number Of Cores",
+      "datatype" : "integer",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "currentLicenseConfiguration_instanceType",
+      "titles" : "Current License Instance Type",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "currentLicenseConfiguration_operatingSystem",
+      "titles" : "Current License Operating System",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "currentLicenseConfiguration_licenseName",
+      "titles" : "Current License License Name",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "currentLicenseConfiguration_licenseEdition",
+      "titles" : "Current License License Edition",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "currentLicenseConfiguration_licenseModel",
+      "titles" : "Current License License Model",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "currentLicenseConfiguration_licenseVersion",
+      "titles" : "Current License License Version",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "currentLicenseConfiguration_metricsSourceProvider",
+      "titles" : "Current License Metric Source Provider",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "currentLicenseConfiguration_metricsSourceProviderArn",
+      "titles" : "Current License Metric Source Provider Arn",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "finding",
+      "titles" : "Finding",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "findingReasonCodes_isInvalidCloudWatchApplicationInsightsSetup",
+      "titles" : "FindingReasonCodes include InvalidCloudWatchApplicationInsightsSetup",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "findingReasonCodes_isCloudWatchApplicationInsightsError",
+      "titles" : "FindingReasonCodes include CloudWatchApplicationInsightsError",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "findingReasonCodes_isLicenseOverprovisioned",
+      "titles" : "FindingReasonCodes include LicenseOverProvisioned",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "findingReasonCodes_isOptimized",
+      "titles" : "FindingReasonCodes include Optimized",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_1_operatingSystem",
+      "titles" : "License recommendation option 1 Operating System",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_1_licenseEdition",
+      "titles" : "License recommendation option 1 License Edition",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_1_licenseModel",
+      "titles" : "License recommendation option 1 License Model",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_1_savingsOpportunityPercentage",
+      "titles" : "License recommendation option 1 Saving Opportunity Percentage",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_1_estimatedMonthlySavingsCurrency",
+      "titles" : "License recommendation option 1 Estimated Monthly Savings Currency",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_1_estimatedMonthlySavingsValue",
+      "titles" : "License recommendation option 1 Estimated Monthly Savings Value",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "errorCode",
+      "titles" : "Error code",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "errorMessage",
+      "titles" : "Error message",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "tags",
+      "titles" : "Resource Tags",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    } ]
+  }
+}

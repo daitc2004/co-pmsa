@@ -1,0 +1,978 @@
+{
+  "@context" : [ "http://www.w3.org/ns/csvw" ],
+  "url" : "us-east-1-2024-12-23T143028Z-094712e3-375a-4513-bb06-667170ffda9f.csv",
+  "dc:title" : "EC2 Instance Recommendations",
+  "dialect" : {
+    "encoding" : "utf-8",
+    "lineTerminators" : [ "\n" ],
+    "doubleQuote" : true,
+    "skipRows" : 0,
+    "header" : true,
+    "headerRowCount" : 1,
+    "delimiter" : ",",
+    "skipColumns" : 0,
+    "skipBlankRows" : true,
+    "trim" : true
+  },
+  "dc:modified" : {
+    "@value" : "2024-03-28",
+    "@type" : "xsd:date"
+  },
+  "tableSchema" : {
+    "columns" : [ {
+      "name" : "accountId",
+      "titles" : "Account id",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "instanceArn",
+      "titles" : "Instance arn",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "instanceName",
+      "titles" : "Instance name",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "currentInstanceType",
+      "titles" : "Current instance type",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "finding",
+      "titles" : "Finding",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "utilizationMetrics_CPU_MAXIMUM",
+      "titles" : "Utilization metrics cpu maximum",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "utilizationMetrics_MEMORY_MAXIMUM",
+      "titles" : "Utilization metrics memory maximum",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "lookBackPeriodInDays",
+      "titles" : "Lookback period in days",
+      "datatype" : "integer",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "current_vcpus",
+      "titles" : "Current number of vcpus",
+      "datatype" : "integer",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "current_memory",
+      "titles" : "Current memory",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "current_storage",
+      "titles" : "Current storage",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "current_network",
+      "titles" : "Current network",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "current_onDemandPrice",
+      "titles" : "Current on-demand price",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "current_standardOneYearNoUpfrontReservedPrice",
+      "titles" : "Current standard one year no upfront reserved price",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "current_standardThreeYearNoUpfrontReservedPrice",
+      "titles" : "Current standard three year no upfront reserved price",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendations_count",
+      "titles" : "Recommendations count",
+      "datatype" : "integer",
+      "required" : true
+    }, {
+      "name" : "recommendationOptions_1_instanceType",
+      "titles" : "Recommendation option 1 configuration instance type",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_2_instanceType",
+      "titles" : "Recommendation option 2 configuration instance type",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_3_instanceType",
+      "titles" : "Recommendation option 3 configuration instance type",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_1_projectedUtilizationMetrics_CPU_MAXIMUM",
+      "titles" : "Recommendation option 1 projected utilization metrics cpu maximum",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_2_projectedUtilizationMetrics_CPU_MAXIMUM",
+      "titles" : "Recommendation option 2 projected utilization metrics cpu maximum",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_3_projectedUtilizationMetrics_CPU_MAXIMUM",
+      "titles" : "Recommendation option 3 projected utilization metrics cpu maximum",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_1_projectedUtilizationMetrics_MEMORY_MAXIMUM",
+      "titles" : "Recommendation option 1 projected utilization metrics memory maximum",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_2_projectedUtilizationMetrics_MEMORY_MAXIMUM",
+      "titles" : "Recommendation option 2 projected utilization metrics memory maximum",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_3_projectedUtilizationMetrics_MEMORY_MAXIMUM",
+      "titles" : "Recommendation option 3 projected utilization metrics memory maximum",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_1_performanceRisk",
+      "titles" : "Recommendation option 1 performance risk",
+      "datatype" : "integer",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_2_performanceRisk",
+      "titles" : "Recommendation option 2 performance risk",
+      "datatype" : "integer",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_3_performanceRisk",
+      "titles" : "Recommendation option 3 performance risk",
+      "datatype" : "integer",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_1_vcpus",
+      "titles" : "Recommendation option 1 number of vcpus",
+      "datatype" : "integer",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_2_vcpus",
+      "titles" : "Recommendation option 2 number of vcpus",
+      "datatype" : "integer",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_3_vcpus",
+      "titles" : "Recommendation option 3 number of vcpus",
+      "datatype" : "integer",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_1_memory",
+      "titles" : "Recommendation option 1 memory",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_2_memory",
+      "titles" : "Recommendation option 2 memory",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_3_memory",
+      "titles" : "Recommendation option 3 memory",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_1_storage",
+      "titles" : "Recommendation option 1 storage",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_2_storage",
+      "titles" : "Recommendation option 2 storage",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_3_storage",
+      "titles" : "Recommendation option 3 storage",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_1_network",
+      "titles" : "Recommendation option 1 network",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_2_network",
+      "titles" : "Recommendation option 2 network",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_3_network",
+      "titles" : "Recommendation option 3 network",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_1_onDemandPrice",
+      "titles" : "Recommendation option 1 on-demand price",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_2_onDemandPrice",
+      "titles" : "Recommendation option 2 on-demand price",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_3_onDemandPrice",
+      "titles" : "Recommendation option 3 on-demand price",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_1_standardOneYearNoUpfrontReservedPrice",
+      "titles" : "Recommendation option 1 standard one year no upfront reserved price",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_2_standardOneYearNoUpfrontReservedPrice",
+      "titles" : "Recommendation option 2 standard one year no upfront reserved price",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_3_standardOneYearNoUpfrontReservedPrice",
+      "titles" : "Recommendation option 3 standard one year no upfront reserved price",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_1_standardThreeYearNoUpfrontReservedPrice",
+      "titles" : "Recommendation option 1 standard three year no upfront reserved price",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_2_standardThreeYearNoUpfrontReservedPrice",
+      "titles" : "Recommendation option 2 standard three year no upfront reserved price",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_3_standardThreeYearNoUpfrontReservedPrice",
+      "titles" : "Recommendation option 3 standard three year no upfront reserved price",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationsSources_1_recommendationSourceArn",
+      "titles" : "Recommendations sources recommendation source arn",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationsSources_1_recommendationSourceType",
+      "titles" : "Recommendations sources recommendation source type",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "lastRefreshTimestamp_UTC",
+      "titles" : "Last refresh UTC timestamp",
+      "datatype" : "datetime",
+      "null" : "",
+      "required" : false,
+      "format" : "yyyy-MM-dd HH:mm:ss"
+    }, {
+      "name" : "errorCode",
+      "titles" : "Error code",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "errorMessage",
+      "titles" : "Error message",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "utilizationMetrics_EBS_READ_OPS_PER_SECOND_MAXIMUM",
+      "titles" : "Utilization metrics ebs read ops maximum",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "utilizationMetrics_EBS_WRITE_OPS_PER_SECOND_MAXIMUM",
+      "titles" : "Utilization metrics ebs write ops maximum",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "utilizationMetrics_EBS_READ_BYTES_PER_SECOND_MAXIMUM",
+      "titles" : "Utilization metrics ebs read bytes maximum",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "utilizationMetrics_EBS_WRITE_BYTES_PER_SECOND_MAXIMUM",
+      "titles" : "Utilization metrics ebs write bytes maximum",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_1_platformDifferences_isHypervisorDifferent",
+      "titles" : "Recommendation option 1 platform differences include Hypervisor",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_1_platformDifferences_isNetworkInterfaceDifferent",
+      "titles" : "Recommendation option 1 platform differences include NetworkInterface",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_1_platformDifferences_isStorageInterfaceDifferent",
+      "titles" : "Recommendation option 1 platform differences include StorageInterface",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_1_platformDifferences_isInstanceStoreAvailabilityDifferent",
+      "titles" : "Recommendation option 1 platform differences include InstanceStoreAvailability",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_1_platformDifferences_isVirtualizationTypeDifferent",
+      "titles" : "Recommendation option 1 platform differences include VirtualizationType",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_2_platformDifferences_isHypervisorDifferent",
+      "titles" : "Recommendation option 2 platform differences include Hypervisor",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_2_platformDifferences_isNetworkInterfaceDifferent",
+      "titles" : "Recommendation option 2 platform differences include NetworkInterface",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_2_platformDifferences_isStorageInterfaceDifferent",
+      "titles" : "Recommendation option 2 platform differences include StorageInterface",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_2_platformDifferences_isInstanceStoreAvailabilityDifferent",
+      "titles" : "Recommendation option 2 platform differences include InstanceStoreAvailability",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_2_platformDifferences_isVirtualizationTypeDifferent",
+      "titles" : "Recommendation option 2 platform differences include VirtualizationType",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_3_platformDifferences_isHypervisorDifferent",
+      "titles" : "Recommendation option 3 platform differences include Hypervisor",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_3_platformDifferences_isNetworkInterfaceDifferent",
+      "titles" : "Recommendation option 3 platform differences include NetworkInterface",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_3_platformDifferences_isStorageInterfaceDifferent",
+      "titles" : "Recommendation option 3 platform differences include StorageInterface",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_3_platformDifferences_isInstanceStoreAvailabilityDifferent",
+      "titles" : "Recommendation option 3 platform differences include InstanceStoreAvailability",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_3_platformDifferences_isVirtualizationTypeDifferent",
+      "titles" : "Recommendation option 3 platform differences include VirtualizationType",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "findingReasonCodes_isCPUOverprovisioned",
+      "titles" : "FindingReasonCodes include CPUOverprovisioned",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "findingReasonCodes_isCPUUnderprovisioned",
+      "titles" : "FindingReasonCodes include CPUUnderprovisioned",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "findingReasonCodes_isMemoryOverprovisioned",
+      "titles" : "FindingReasonCodes include MemoryOverprovisioned",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "findingReasonCodes_isMemoryUnderprovisioned",
+      "titles" : "FindingReasonCodes include MemoryUnderprovisioned",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "findingReasonCodes_isEBSThroughputOverprovisioned",
+      "titles" : "FindingReasonCodes include EBSThroughputOverprovisioned",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "findingReasonCodes_isEBSThroughputUnderprovisioned",
+      "titles" : "FindingReasonCodes include EBSThroughputUnderprovisioned",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "findingReasonCodes_isEBSIOPSOverprovisioned",
+      "titles" : "FindingReasonCodes include EBSIOPSOverprovisioned",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "findingReasonCodes_isEBSIOPSUnderprovisioned",
+      "titles" : "FindingReasonCodes include EBSIOPSUnderprovisioned",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "findingReasonCodes_isNetworkBandwidthOverprovisioned",
+      "titles" : "FindingReasonCodes include NetworkBandwidthOverprovisioned",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "findingReasonCodes_isNetworkBandwidthUnderprovisioned",
+      "titles" : "FindingReasonCodes include NetworkBandwidthUnderprovisioned",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "findingReasonCodes_isNetworkPPSOverprovisioned",
+      "titles" : "FindingReasonCodes include NetworkPPSOverprovisioned",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "findingReasonCodes_isNetworkPPSUnderprovisioned",
+      "titles" : "FindingReasonCodes include NetworkPPSUnderprovisioned",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "findingReasonCodes_isDiskIOPSOverprovisioned",
+      "titles" : "FindingReasonCodes include DiskIOPSOverprovisioned",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "findingReasonCodes_isDiskIOPSUnderprovisioned",
+      "titles" : "FindingReasonCodes include DiskIOPSUnderprovisioned",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "findingReasonCodes_isDiskThroughputOverprovisioned",
+      "titles" : "FindingReasonCodes include DiskThroughputOverprovisioned",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "findingReasonCodes_isDiskThroughputUnderprovisioned",
+      "titles" : "FindingReasonCodes include DiskThroughputUnderprovisioned",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "utilizationMetrics_NETWORK_IN_BYTES_PER_SECOND_MAXIMUM",
+      "titles" : "Utilization metrics network in bytes per second maximum",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "utilizationMetrics_NETWORK_OUT_BYTES_PER_SECOND_MAXIMUM",
+      "titles" : "Utilization metrics network out bytes per second maximum",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "utilizationMetrics_NETWORK_PACKETS_IN_PER_SECOND_MAXIMUM",
+      "titles" : "Utilization metrics network packets in per second maximum",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "utilizationMetrics_NETWORK_PACKETS_OUT_PER_SECOND_MAXIMUM",
+      "titles" : "Utilization metrics network packets out per second maximum",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "utilizationMetrics_DISK_READ_OPS_PER_SECOND_MAXIMUM",
+      "titles" : "Utilization metrics disk read ops per second maximum",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "utilizationMetrics_DISK_WRITE_OPS_PER_SECOND_MAXIMUM",
+      "titles" : "Utilization metrics disk write ops per second maximum",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "utilizationMetrics_DISK_READ_BYTES_PER_SECOND_MAXIMUM",
+      "titles" : "Utilization metrics disk read bytes per second maximum",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "utilizationMetrics_DISK_WRITE_BYTES_PER_SECOND_MAXIMUM",
+      "titles" : "Utilization metrics disk write bytes per second maximum",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_1_platformDifferences_isArchitectureDifferent",
+      "titles" : "Recommendation option 1 platform differences include Architecture",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_2_platformDifferences_isArchitectureDifferent",
+      "titles" : "Recommendation option 2 platform differences include Architecture",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_3_platformDifferences_isArchitectureDifferent",
+      "titles" : "Recommendation option 3 platform differences include Architecture",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "currentPerformanceRisk",
+      "titles" : "Current performance risk",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_1_savingsOpportunityPercentage",
+      "titles" : "Recommendation option 1 savings opportunity percentage",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_1_estimatedMonthlySavings_currency",
+      "titles" : "Recommendation option 1 estimated monthly savings currency",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_1_estimatedMonthlySavings_value",
+      "titles" : "Recommendation option 1 estimated monthly savings value",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_2_savingsOpportunityPercentage",
+      "titles" : "Recommendation option 2 savings opportunity percentage",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_2_estimatedMonthlySavings_currency",
+      "titles" : "Recommendation option 2 estimated monthly savings currency",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_2_estimatedMonthlySavings_value",
+      "titles" : "Recommendation option 2 estimated monthly savings value",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_3_savingsOpportunityPercentage",
+      "titles" : "Recommendation option 3 savings opportunity percentage",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_3_estimatedMonthlySavings_currency",
+      "titles" : "Recommendation option 3 estimated monthly savings currency",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_3_estimatedMonthlySavings_value",
+      "titles" : "Recommendation option 3 estimated monthly savings value",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "effectiveRecommendationPreferencesInferredWorkloadTypes",
+      "titles" : "Effective recommendation preferences inferred workload types",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "inferredWorkloadTypes",
+      "titles" : "Inferred workload types",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_1_migrationEffort",
+      "titles" : "Recommendation option 1 migration effort",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_2_migrationEffort",
+      "titles" : "Recommendation option 2 migration effort",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_3_migrationEffort",
+      "titles" : "Recommendation option 3 migration effort",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "effectiveRecommendationPreferencesCpuVendorArchitectures",
+      "titles" : "Effective recommendation preferences cpu architectures",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "effectiveRecommendationPreferencesEnhancedInfrastructureMetrics",
+      "titles" : "Effective recommendation preferences enhanced infrastructure metrics",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "effectiveRecommendationPreferencesExternalMetricsSource",
+      "titles" : "Effective recommendation preferences external metrics source",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "instanceState",
+      "titles" : "Instance State",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "tags",
+      "titles" : "Resource Tags",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "external_metric_status_code",
+      "titles" : "External Metric Status Code",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "external_metric_status_reason",
+      "titles" : "External Metric Status Reason",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "utilizationMetrics_GPU_PERCENTAGE_MAXIMUM",
+      "titles" : "Utilization metrics gpu percentage maximum",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "utilizationMetrics_GPU_MEMORY_PERCENTAGE_MAXIMUM",
+      "titles" : "Utilization metrics gpu memory percentage maximum",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "findingReasonCodes_isGPUOverprovisioned",
+      "titles" : "FindingReasonCodes include GPUOverprovisioned",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "findingReasonCodes_isGPUUnderprovisioned",
+      "titles" : "FindingReasonCodes include GPUUnderprovisioned",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "findingReasonCodes_isGPUMemoryOverprovisioned",
+      "titles" : "FindingReasonCodes include GPUMemoryOverprovisioned",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "findingReasonCodes_isGPUMemoryUnderprovisioned",
+      "titles" : "FindingReasonCodes include GPUMemoryUnderprovisioned",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "currentInstanceGpuInfo_gpus_1_gpuCount",
+      "titles" : "Current GPU 1 count",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "currentInstanceGpuInfo_gpus_1_gpuMemorySizeInMiB",
+      "titles" : "Current GPU 1 memory size in MiB",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_1_projectedUtilizationMetrics_GPU_PERCENTAGE_MAXIMUM",
+      "titles" : "Recommendation option 1 projected utilization metrics gpu percentage maximum",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_2_projectedUtilizationMetrics_GPU_PERCENTAGE_MAXIMUM",
+      "titles" : "Recommendation option 2 projected utilization metrics gpu percentage maximum",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_3_projectedUtilizationMetrics_GPU_PERCENTAGE_MAXIMUM",
+      "titles" : "Recommendation option 3 projected utilization metrics gpu percentage maximum",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_1_projectedUtilizationMetrics_GPU_MEMORY_PERCENTAGE_MAXIMUM",
+      "titles" : "Recommendation option 1 projected utilization metrics gpu memory percentage maximum",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_2_projectedUtilizationMetrics_GPU_MEMORY_PERCENTAGE_MAXIMUM",
+      "titles" : "Recommendation option 2 projected utilization metrics gpu memory percentage maximum",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_3_projectedUtilizationMetrics_GPU_MEMORY_PERCENTAGE_MAXIMUM",
+      "titles" : "Recommendation option 3 projected utilization metrics gpu memory percentage maximum",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_1_instanceGpuInfo_1_gpuCount",
+      "titles" : "Recommendation option 1 gpu 1 count",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_1_instanceGpuInfo_1_gpuMemorySizeInMiB",
+      "titles" : "Recommendation option  1 gpu 1 memory size in MiB",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_2_instanceGpuInfo_1_gpuCount",
+      "titles" : "Recommendation option 2 gpu 1 count",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_2_instanceGpuInfo_1_gpuMemorySizeInMiB",
+      "titles" : "Recommendation option  2 gpu 1 memory size in MiB",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_3_instanceGpuInfo_1_gpuCount",
+      "titles" : "Recommendation option 3 gpu 1 count",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_3_instanceGpuInfo_1_gpuMemorySizeInMiB",
+      "titles" : "Recommendation option  3 gpu 1 memory size in MiB",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "idle",
+      "titles" : "Idle",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "effectiveRecommendationPreferencesSavingsEstimationModeSource",
+      "titles" : "Effective Recommendation Preferences Savings Estimation Mode",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_1_estimatedMonthlySavingsAfterDiscounts_value",
+      "titles" : "Recommendation Options Savings Opportunity After Discounts Value",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_1_estimatedMonthlySavingsAfterDiscounts_currency",
+      "titles" : "Recommendation Options Savings Opportunity After Discounts Currency",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_1_savingsOpportunityPercentageAfterDiscounts",
+      "titles" : "Recommendation Options Savings Opportunity Percentage After Discounts",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_2_estimatedMonthlySavingsAfterDiscounts_value",
+      "titles" : "Recommendation Options Savings Opportunity After Discounts Value",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_2_estimatedMonthlySavingsAfterDiscounts_currency",
+      "titles" : "Recommendation Options Savings Opportunity After Discounts Currency",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_2_savingsOpportunityPercentageAfterDiscounts",
+      "titles" : "Recommendation Options Savings Opportunity Percentage After Discounts",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_3_estimatedMonthlySavingsAfterDiscounts_value",
+      "titles" : "Recommendation Options Savings Opportunity After Discounts Value",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_3_estimatedMonthlySavingsAfterDiscounts_currency",
+      "titles" : "Recommendation Options Savings Opportunity After Discounts Currency",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_3_savingsOpportunityPercentageAfterDiscounts",
+      "titles" : "Recommendation Options Savings Opportunity Percentage After Discounts",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "effectiveRecommendationPreferencesLookBackPeriod",
+      "titles" : "Effective Recommendation Preferences Look Back Period",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "effectiveRecommendationPreferencesPreferredResources_Ec2InstanceTypes_IncludeList",
+      "titles" : "Effective Recommendation Preferences Preferred Resources Ec2 Instance Include List",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "effectiveRecommendationPreferencesPreferredResources_Ec2InstanceTypes_ExcludeList",
+      "titles" : "Effective Recommendation Preferences Preferred Resources Ec2 Instance Exclude List",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "effectiveRecommendationPreferencesUtilizationPreferences_CpuUtilization_Threshold",
+      "titles" : "Effective Recommendation Preferences Cpu Utilization Threshold",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "effectiveRecommendationPreferencesUtilizationPreferences_CpuUtilization_Headroom",
+      "titles" : "Effective Recommendation Preferences Cpu Utilization Headroom",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "effectiveRecommendationPreferencesUtilizationPreferences_MemoryUtilization_Headroom",
+      "titles" : "Effective Recommendation Preferences Memory Utilization Headroom",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    } ]
+  }
+}
