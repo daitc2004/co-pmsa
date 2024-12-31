@@ -1,0 +1,378 @@
+{
+  "@context" : [ "http://www.w3.org/ns/csvw" ],
+  "url" : "ap-southeast-1-2024-06-24T143032Z-4a026e9a-28a9-4832-ac47-ff47591c9b7c.csv",
+  "dc:title" : "Lambda Function Recommendations",
+  "dialect" : {
+    "encoding" : "utf-8",
+    "lineTerminators" : [ "\n" ],
+    "doubleQuote" : true,
+    "skipRows" : 0,
+    "header" : true,
+    "headerRowCount" : 1,
+    "delimiter" : ",",
+    "skipColumns" : 0,
+    "skipBlankRows" : true,
+    "trim" : true
+  },
+  "dc:modified" : {
+    "@value" : "2023-11-26",
+    "@type" : "xsd:date"
+  },
+  "tableSchema" : {
+    "columns" : [ {
+      "name" : "accountId",
+      "titles" : "Account id",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "functionArn",
+      "titles" : "Lambda Function arn",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "functionVersion",
+      "titles" : "Lambda Function version",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "finding",
+      "titles" : "Finding",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "findingReasonCodes_isMemoryOverprovisioned",
+      "titles" : "FindingReasonCodes include MemoryOverprovisioned",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "findingReasonCodes_isMemoryUnderprovisioned",
+      "titles" : "FindingReasonCodes include MemoryUnderprovisioned",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "findingReasonCodes_isInsufficientData",
+      "titles" : "FindingReasonCodes include InsufficientData",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "findingReasonCodes_isInconclusive",
+      "titles" : "FindingReasonCodes include Inconclusive",
+      "datatype" : "boolean",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "numberOfInvocations",
+      "titles" : "Number of invocations",
+      "datatype" : "long",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "lookBackPeriodInDays",
+      "titles" : "Lookback period in days",
+      "datatype" : "integer",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "lastRefreshTimestamp_UTC",
+      "titles" : "Last refresh UTC timestamp",
+      "datatype" : "datetime",
+      "null" : "",
+      "required" : false,
+      "format" : "yyyy-MM-dd HH:mm:ss"
+    }, {
+      "name" : "currentConfiguration_memorySize",
+      "titles" : "Current configuration memory size",
+      "datatype" : "integer",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "currentConfiguration_timeout",
+      "titles" : "Current configuration timeout",
+      "datatype" : "integer",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "current_costTotal",
+      "titles" : "Current cost total",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "current_costAverage",
+      "titles" : "Current cost average",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendations_count",
+      "titles" : "Recommendations count",
+      "datatype" : "integer",
+      "required" : true
+    }, {
+      "name" : "recommendationOptions_1_configuration_memorySize",
+      "titles" : "Recommendation option 1 configuration memory size",
+      "datatype" : "integer",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_1_costLow",
+      "titles" : "Recommendation option 1 cost low",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_1_costHigh",
+      "titles" : "Recommendation option 1 cost high",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_1_projectedUtilizationMetrics_DurationLowerBound",
+      "titles" : "Recommendation option 1 projected duration lower bound",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_1_projectedUtilizationMetrics_DurationUpperBound",
+      "titles" : "Recommendation option 1 projected duration upper bound",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_1_projectedUtilizationMetrics_DurationExpected",
+      "titles" : "Recommendation option 1 projected duration expected",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_2_configuration_memorySize",
+      "titles" : "Recommendation option 2 configuration memory size",
+      "datatype" : "integer",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_2_costLow",
+      "titles" : "Recommendation option 2 cost low",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_2_costHigh",
+      "titles" : "Recommendation option 2 cost high",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_2_projectedUtilizationMetrics_DurationLowerBound",
+      "titles" : "Recommendation option 2 projected duration lower bound",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_2_projectedUtilizationMetrics_DurationUpperBound",
+      "titles" : "Recommendation option 2 projected duration upper bound",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_2_projectedUtilizationMetrics_DurationExpected",
+      "titles" : "Recommendation option 2 projected duration expected",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_3_configuration_memorySize",
+      "titles" : "Recommendation option 3 configuration memory size",
+      "datatype" : "integer",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_3_costLow",
+      "titles" : "Recommendation option 3 cost low",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_3_costHigh",
+      "titles" : "Recommendation option 3 cost high",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_3_projectedUtilizationMetrics_DurationLowerBound",
+      "titles" : "Recommendation option 3 projected duration lower bound",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_3_projectedUtilizationMetrics_DurationUpperBound",
+      "titles" : "Recommendation option 3 projected duration upper bound",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_3_projectedUtilizationMetrics_DurationExpected",
+      "titles" : "Recommendation option 3 projected duration expected",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "utilizationMetrics_DurationMaximum",
+      "titles" : "Utilization metrics duration maximum",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "utilizationMetrics_MemoryMaximum",
+      "titles" : "Utilization metrics memory maximum",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "utilizationMetrics_DurationAverage",
+      "titles" : "Utilization metrics duration average",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "utilizationMetrics_MemoryAverage",
+      "titles" : "Utilization metrics memory average",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "currentPerformanceRisk",
+      "titles" : "Current performance risk",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_1_savingsOpportunityPercentage",
+      "titles" : "Recommendation option 1 savings opportunity percentage",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_1_estimatedMonthlySavings_currency",
+      "titles" : "Recommendation option 1 estimated monthly savings currency",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_1_estimatedMonthlySavings_value",
+      "titles" : "Recommendation option 1 estimated monthly savings value",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_2_savingsOpportunityPercentage",
+      "titles" : "Recommendation option 2 savings opportunity percentage",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_2_estimatedMonthlySavings_currency",
+      "titles" : "Recommendation option 2 estimated monthly savings currency",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_2_estimatedMonthlySavings_value",
+      "titles" : "Recommendation option 2 estimated monthly savings value",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_3_savingsOpportunityPercentage",
+      "titles" : "Recommendation option 3 savings opportunity percentage",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_3_estimatedMonthlySavings_currency",
+      "titles" : "Recommendation option 3 estimated monthly savings currency",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_3_estimatedMonthlySavings_value",
+      "titles" : "Recommendation option 3 estimated monthly savings value",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "tags",
+      "titles" : "Resource Tags",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "effectiveRecommendationPreferencesSavingsEstimationModeSource",
+      "titles" : "Effective Recommendation Preferences Savings Estimation Mode Source",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_1_estimatedMonthlySavingsAfterDiscounts_value",
+      "titles" : "Recommendation Options Savings Opportunity After Discounts Value",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_1_estimatedMonthlySavingsAfterDiscounts_currency",
+      "titles" : "Recommendation Options Savings Opportunity After Discounts Currency",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_1_savingsOpportunityPercentageAfterDiscounts",
+      "titles" : "Recommendation Options Savings Opportunity Percentage After Discounts",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_2_estimatedMonthlySavingsAfterDiscounts_value",
+      "titles" : "Recommendation Options Savings Opportunity After Discounts Value",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_2_estimatedMonthlySavingsAfterDiscounts_currency",
+      "titles" : "Recommendation Options Savings Opportunity After Discounts Currency",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_2_savingsOpportunityPercentageAfterDiscounts",
+      "titles" : "Recommendation Options Savings Opportunity Percentage After Discounts",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_3_estimatedMonthlySavingsAfterDiscounts_value",
+      "titles" : "Recommendation Options Savings Opportunity After Discounts Value",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_3_estimatedMonthlySavingsAfterDiscounts_currency",
+      "titles" : "Recommendation Options Savings Opportunity After Discounts Currency",
+      "datatype" : "string",
+      "null" : "",
+      "required" : false
+    }, {
+      "name" : "recommendationOptions_3_savingsOpportunityPercentageAfterDiscounts",
+      "titles" : "Recommendation Options Savings Opportunity Percentage After Discounts",
+      "datatype" : "double",
+      "null" : "",
+      "required" : false
+    } ]
+  }
+}
